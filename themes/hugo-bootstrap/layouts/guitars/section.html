@@ -1,0 +1,54 @@
+
+
+
+{{ partial "head" . }}
+<div class="container">
+  <div class="row">
+    <div class="col-12">    
+      {{ .Content }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>Models</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    {{ range .Pages }}
+        <div class="col-md-4">
+            <a href="{{ .RelPermalink }}">
+                <div class="card">
+                    <img class="card-img-top" src="../placeholder.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {{ end }}
+</div>
+
+<div class="row mt-2">
+  <div class="col-12">
+    <h2>Customization</h2>
+    <p>These models are customizable. Let's work together on things like:
+      <ul>
+        <li>Pickup selection and placement</li>
+        <li>Control configuration and design</li>
+        <li>Hardware</li>
+        <li>Bridge style</li>
+        <li>Wood selection and finish</li>
+      </ul>
+    </p>
+
+    <p>But, my guitars aren't endlessly customizeable. I focus on the design elements that I think make great guitars - and the construction and processes that I'm great at. If you want a JM-style guitar with dual humbuckers, coil tops, cut-out switches, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
+    </p>
+
+
+  </div>
+</div>
+</div>
+{{ partial "foot" . }}

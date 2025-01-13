@@ -23,7 +23,7 @@
     </div>
 
     <div class="row">
-        {{ range .Site.RegularPages }}
+        {{ range where .Site.Pages "Params.homeDisplay" true }}
             <div class="col-md-4">
                 <a href="{{ .RelPermalink }}">
                     <div class="card">

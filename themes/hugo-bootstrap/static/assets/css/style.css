@@ -97,10 +97,6 @@ pre code {
   border: 0px !important;
 }
 
-a {
-  color: #00ab6b;
-}
-
 a,
 a:hover {
   transition: all 0.2s;
@@ -109,6 +105,10 @@ a:hover {
 
 section {
   margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 5px lightblue;
 }
 
 .section-title {
@@ -120,7 +120,7 @@ section {
 }
 
 .section-title span {
-  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  /* border-bottom: 1px solid rgba(0, 0, 0, .25); */
   display: inline-block;
   padding-bottom: 0px;
   margin-bottom: -1px;

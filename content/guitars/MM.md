@@ -4,9 +4,10 @@ date: 2022-06-19T13:18:41-04:00
 draft: false
 weight: 1
 type: guitars
+pricing: "$1, Bob."
 ---
 
-The MM is a traditional, carved-top electric guitar with a 24.75" scale length.
+The MM is a carved-top electric guitar with a 24.75" scale length.
 
 Standard features:
 - Unique Makino Guitars offset body shape and headstock

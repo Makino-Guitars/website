@@ -14,23 +14,18 @@
     </div>
 
     <div class="row">
-        <div class="col-12">
-            <div class="section-title">
-                <span>Get info:</span>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="row">
         {{ range where .Site.Pages "Params.homeDisplay" true }}
             <div class="col-md-4">
                 <a href="{{ .RelPermalink }}">
-                    <div class="card">
+                    <div class="card theme-indigo color-sage card-shadow-lavendar">
+                        {{ if .Params.img }}
+                        <img class="card-img-top" src="{{ .Params.img }}" alt="Card image cap">
+                        {{ else }}
                         <img class="card-img-top" src="placeholder.png" alt="Card image cap">
+                        {{ end }}
                         <div class="card-body">
-                        <h5 class="card-title">{{ .Title }}</h5>
-                        <p class="card-text">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
+                        <h3 class="card-title color-sage">{{ .Title }}</h3>
+                        <p class="card-text color-sage">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
                         </div>
                     </div>
                 </a>

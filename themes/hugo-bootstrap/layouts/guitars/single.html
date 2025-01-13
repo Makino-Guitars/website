@@ -1,15 +1,21 @@
-
-
-
 {{ partial "head" . }}
 <div class="container">
   <div class="row">
-    guitar single
-    
-    
-    <!-- End Fixed Left Share -->
-    <div class="offset-lg-1 col-lg-10 col-sm-12">
-      {{ .Render "single.content" }}
+    <div class="col-12">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../" class="color-indigo">Home</a></li>
+            <li class="breadbrumb-item"><a href="../">Guitars</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-12">
+      bing bong, guitar single - 
+      {{ .Content }}
     </div>
   </div>
 </div>

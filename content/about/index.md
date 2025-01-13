@@ -4,6 +4,7 @@ date: 2022-06-19T12:14:19-04:00
 draft: false
 weight: 3
 homeDisplay: true
+img: process.jpg
 ---
 
 My name is Tak. By day, I work for a civil engineering firm. By night, I build guitars in my workshop. 

@@ -103,12 +103,16 @@ a:hover {
   text-decoration: none;
 }
 
+.card:hover  {
+  transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 section {
   margin-bottom: 20px;
 }
 
-.card:hover {
-  box-shadow: 10px 10px 5px lightblue;
+.card-shadow-lavendar {
+  box-shadow: 3px 3px 10px #E6AACE;
 }
 
 .section-title {
@@ -277,4 +281,54 @@ blockquote p cite {
 
 blockquote p cite:before {
   content: "\2014 \2009";
+}
+
+
+.customfigure {
+  width: 800px;
+}
+
+/* CUSTOM THEME COLORS */
+p {
+  color: #0D1821!important;
+}
+
+.theme-black {
+  background-color:#0D1821!important;
+}
+
+.theme-indigo {
+  background-color: #344966!important;
+}
+
+.theme-powder {
+  background-color: #F0F4EF!important;
+}
+
+.theme-sage {
+  background-color: #BFCC94!important;
+}
+
+.theme-lavendar {
+  background-color: #E6AACE!important;
+}
+
+.color-black {
+  color:#0D1821!important;
+}
+
+.color-indigo {
+  color: #344966!important;
+}
+
+.color-powder {
+  color: #F0F4EF!important;
+}
+
+.color-sage {
+  color: #BFCC94!important;
+}
+
+.color-lavendar {
+  color: #E6AACE!important;
 }

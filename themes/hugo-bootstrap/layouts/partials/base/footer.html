@@ -1,20 +1,24 @@
-<footer class="footer text-white {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
-  <div class="container">
-    <div class="row">
-      <div class="offset-lg-1 col-lg-10 col-xs-12">
-        <p class="text-center my-4 pa-0 color-sage">
+<footer class="footer {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
+  <div class="container theme-black color-sage">
+    <div class="row mt-3">
+      <div class="col-4">
+        <p class="color-sage text-center">
           &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
         </p>
-        {{ if .Site.Menus.footer }}
-        <p class="text-center mb-0 pa-0">
-          {{ $footerMenuLen := len .Site.Menus.footer}} {{ if gt $footerMenuLen 0 }} {{ range $k, $v := .Site.Menus.footer }}
-          <span class="p-l-1 p-r-1">
-                <a href="{{.URL}}" class="text-capitalize no-decoration text-white">{{ .Name }}</a>
-              </span>
-              {{ if lt $k (sub $footerMenuLen 1) }}&middot;{{ end }} {{ end }} {{ end }}
-        </p>
-        {{ end }}
       </div>
+
+        {{ $currentNode := . }} {{ range .Site.Menus.footer }}
+        <div class="col-4">
+
+          <p class="text-center"><a class="color-sage" href="{{.URL}}">
+            {{ .Pre }}
+            <span class="text-capitalize">{{ .Name }}</span>
+          </a>
+        </p>
+        </div>
+        {{end}}
+
     </div>
+
   </div>
 </footer>

@@ -6,5 +6,5 @@ draft: false
 
 Hi, I'm Tak Makino. 
 
-I make handmade electric guitars in Houston, Texas.
+I make electric guitars by hand in Houston, Texas.
 

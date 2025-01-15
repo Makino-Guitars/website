@@ -333,5 +333,12 @@ p {
   color: #E6AACE!important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "American Typewriter", serif; /* Fallback to serif if the font isn't available */
+  font-weight: bold;
+}
 
+body {
+  font-family: "Avenir Book"
+}
 

@@ -1,7 +1,7 @@
 ---
 title: "Makino Guitars: the guitars"
 date: 2022-06-19T13:18:41-04:00
-draft: false
+draft: true
 weight: 1
 type: guitars
 layout: section

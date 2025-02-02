@@ -15,4 +15,6 @@ These models are customizable. Let's work together on things like:
 - Bridge style
 - Wood selection and finish
 
-But, my guitars aren't endlessly customizeable. I focus on the design elements that I think make great guitars - and the construction and processes that I'm great at. If you want a JM-style guitar with dual humbuckers, coil tops, cut-out switches, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
+But, my guitars aren't endlessly customizeable. I focus on the design elements that I think make great guitars - and the construction and processes that I'm great at. 
+
+If you want a JM-style guitar that's semi-hollow with an f-hole, dual humbuckers, coil taps, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.

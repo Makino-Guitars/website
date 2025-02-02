@@ -1,7 +1,7 @@
 ---
-title: "About Makino Guitars"
+title: "About me"
 date: 2022-06-19T12:14:19-04:00
-draft: true
+draft: false
 weight: 3
 homeDisplay: true
 img: process.jpg

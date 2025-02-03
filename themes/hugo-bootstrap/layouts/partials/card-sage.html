@@ -1,0 +1,22 @@
+<a href="{{ .RelPermalink }}">
+    <div class="card color-indigo card-sage card-shadow-lavendar bg-light">
+
+        <div class="row no-gutters">
+            <div class="col-4">
+                {{ if .Params.img }}
+                    <img class="card-img-top" src="{{ .Params.img | absURL }}" alt="Card image cap">
+                {{ else }}
+                {{ $placeholder := "placeholder.png"}}
+                <img class="card-img-top" src="{{ $placeholder | absURL }}" alt="Card image cap">
+                {{ end }}
+            </div>
+
+            <div class="col-8">
+                <div class="card-body">
+                    <h3 class="card-title color-indigo">{{ .Title }}</h3>
+                    <p class="card-text color-indigo">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

@@ -1,5 +1,5 @@
 ---
-title: "Customization"
+title: "Customize"
 date: 2022-06-19T13:18:41-04:00
 draft: false
 weight: 2
@@ -13,8 +13,10 @@ These models are customizable. Let's work together on things like:
 - Control configuration and design
 - Hardware
 - Bridge style
-- Wood selection and finish
+- Wood selection 
+- Finish
 
-But, my guitars aren't endlessly customizeable. I focus on the design elements that I think make great guitars - and the construction and processes that I'm great at. 
+## But...
+My guitars aren't endlessly customizeable. If you want a JM-style guitar that's semi-hollow with an f-hole, dual humbuckers, coil taps, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
 
-If you want a JM-style guitar that's semi-hollow with an f-hole, dual humbuckers, coil taps, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
+That's because I focus on design elements that I think make great guitars - and the construction and processes that I can execute well. 

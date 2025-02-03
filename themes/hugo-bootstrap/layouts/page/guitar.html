@@ -1,25 +1,24 @@
 {{ partial "head" . }}
 <div class="container">
-
   <div class="row">
       <div class="col-12">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../" class="color-indigo">Home</a></li>
-            {{ with .Parent }}
-            <li class="breadcrumb-item"><a href="{{ .RelPermalink }}"  class="color-indigo">Guitars</a></li>
-            {{ end }}
+            <li class="breadcrumb-item"><a href="../" class="color-indigo">Guitars</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
           </ol>
         </nav>
       </div>
 
-    <div class="col-12">
-      default single.
-      <h2>{{ .Title }}</h2>
+    <div class="col-md-8">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
+
+    <div class="col-md-4">
+      IMG
+    </div>
   </div>
-  
 </div>
 {{ partial "foot" . }}

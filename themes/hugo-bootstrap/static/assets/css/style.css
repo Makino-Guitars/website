@@ -111,13 +111,8 @@ section {
   margin-bottom: 20px;
 }
 
-.card-shadow-lavendar {
-  box-shadow: 3px 3px 10px #E6AACE;
-}
 
-.card-shadow-sage {
-  box-shadow: 3px 3px 10px #BFCC94;
-}
+
 
 .section-title {
   border-bottom: 1px solid rgba(0, 0, 0, .15);
@@ -292,6 +287,11 @@ blockquote p cite:before {
   width: 800px;
 }
 
+
+
+
+
+
 /* CUSTOM THEME COLORS */
 p {
   color: #0D1821!important;
@@ -348,4 +348,43 @@ body {
 
 .lavendar-rule {
   border: 1px solid #E6AACE;
+}
+
+.card-indigo {
+  border-top: 12px solid #344966;
+  border-radius: 0px!important;
+}
+
+.card-sage {
+  border-top: 10px solid #BFCC94;
+  border-radius: 0px!important;
+}
+
+.card-sage .card-img-top {
+  border-radius: 0px!important;
+}
+
+.card-indigo .card-img-top {
+  border-radius: 0px!important;
+}
+
+.card-shadow-lavendar {
+  box-shadow: 2px 2px 8px #E6AACE50;
+}
+
+.card-shadow-sage {
+  box-shadow: 2px 2px 15px #BFCC94;
+}
+
+
+.breadcrumb {
+  background-color: transparent!important;
+  padding-left: 0px!important;
+
+}
+
+nav {
+  border-radius: 0px!important;
+  border-top: 2px solid #BFCC94;
+  margin-bottom: 65px;
 }

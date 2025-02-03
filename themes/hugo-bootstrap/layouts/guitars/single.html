@@ -11,9 +11,21 @@
         </nav>
       </div>
 
-    <div class="col-12">
-      <h1>{{ .Title }}</h1>
+      <div class="col-12">
+        <h1>{{ .Title }}</h1>
+      </div>
+
+    <div class="col-md-8">
       {{ .Content }}
+    </div>
+
+    <div class="col-md-4">
+      {{ if .Params.img }}
+      <img src="{{ .Params.img | absURL }}" style="width:100%;">
+      {{ else }}
+      {{ $placeholder := "placeholder.png"}}
+      <img src="{{ $placeholder | absURL }}" style="width:100%;">
+      {{ end }}
     </div>
   </div>
 </div>

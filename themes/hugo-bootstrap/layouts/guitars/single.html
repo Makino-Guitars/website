@@ -28,5 +28,12 @@
       {{ end }}
     </div>
   </div>
+
+
+    {{ if .Params.gallery }}
+      {{ partial "guitar-gallery" . }}
+    {{ end }}
+
+
 </div>
 {{ partial "foot" . }}

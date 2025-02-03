@@ -5,6 +5,7 @@ draft: false
 weight: 1
 pageType: guitarmodels
 img: MMSGa.png
+gallery: mmsg
 ---
 
 The MM-SG is a slab-body adaptation of the MM design. Again, it's designed around a 24.75" scale length and my unique Makino Guitars offset body shape and headstock. However, the MM-SG features some major differences from other traditional guitar shapes and construction methods to result in a stronger neck/body joint - that means a stronger guitar with greater tuning stability and durability.

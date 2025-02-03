@@ -6,6 +6,7 @@ weight: 1
 pageType: guitarmodels
 pricing: "$1, Bob."
 img: MM-01.jpg
+gallery: mm
 ---
 
 The MM is a carved-top electric guitar with a 24.75" scale length, set neck construction, and a unique Makino Giutars offset bodyshape and headstock shape. I build it with options around:

@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-md site-navbar {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
-    <a class="navbar-brand color-sage" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  <button class="navbar-toggler color-sage" 
+<nav class="navbar navbar-expand-md site-navbar theme-bg-dark mb-0">
+  {{ $img := "M-cream-trans.png" }}
+    <a class="navbar-brand theme-text-light" href="{{ .Site.BaseURL }}"><img src="{{ $img | absURL }}" style="height: 50px;">{{ .Site.Title }}</a>
+  <button class="navbar-toggler theme-text-light" 
   type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
     aria-expanded="false" aria-label="Toggle navigation">
     &#9776;
@@ -9,7 +10,7 @@
     <ul class="nav navbar-nav ml-auto">
       {{ $currentNode := . }} {{ range .Site.Menus.main }}
       <li class="nav-item">
-        <a class="nav-link menu-item  no-decoration {{ $.Site.Params.navbarLinkFgColorClass | default $.Site.Data.Defaults.navbarLinkFgColorClass }}" href="{{.URL}}">
+        <a class="nav-link menu-item no-decoration theme-text-light" href="{{.URL}}">
           {{ .Pre }}
           <span class="text-capitalize">{{ .Name }}</span>
         </a>

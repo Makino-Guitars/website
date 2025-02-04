@@ -5,8 +5,55 @@ $cream:         #FFF8E7;
 $tan:           #E0BB7F;
 $orange:        #C56D27;
 
+$indigo:        #344966;
 
-/* CUSTOM THEME COLORS */
+.theme-bg-dark {
+    background-color: $slate!important;
+    color: $cream;
+}
+
+.theme-text-light {
+    color: $cream!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "American Typewriter", serif;
+    font-weight: 900;
+    color: $slate;
+  }
+
+hr {
+    border: 2px solid $orange
+}
+
+.big-fn-image {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-shadow {
+    width: 150px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+
+
+.theme-bg-cream {
+    background-color: $cream!important;
+}
+
+.card {
+    border-top: 12px solid $slate;
+    border-radius: 0px!important;
+    box-shadow: 2px 2px 5px $tan;
+}
+
+
+
+/* OLD THEME COLORS */
 p {
     color: #0D1821!important;
   }
@@ -51,10 +98,7 @@ p {
     color: #E6AACE!important;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Ambroise";
-    font-weight: 900;
-  }
+
   
   .lavendar-rule {
     border: 1px solid #E6AACE;
@@ -83,7 +127,7 @@ p {
   }
   
   .card-shadow-sage {
-    box-shadow: 2px 2px 15px #BFCC94;
+    /*box-shadow: 2px 2px 15px #BFCC94;*/
   }
   
   
@@ -100,7 +144,7 @@ p {
   }
   
   
-  /* FONTS */
+  /* FONTS 
   @font-face {
     font-family: 'Brandon Grotesque regular';
     src: url('/fonts/Brandon-Grotesque-regular.otf') format('opentype');
@@ -121,3 +165,4 @@ p {
     font-weight: 500;
     line-height: 1.9rem;
   }
+    */

@@ -1,38 +1,38 @@
 {{ partial "head" . }}
-<div class="container">
+<div class="container-fluid p-0">
+
+    <div class="row no-gutters">
+        <div class="col-12 p-0" style="">
+            <div class="big-fn-image" style="background-image: url('MM02.jpeg');">
+                <img src="Makino-orange-trans.png" style="width: 50%;" class="float-left img-shadow">
+            </div>
+        </div>
+    </div>
 
     <div class="row">
-        <div class="col-md-12">
-            <img class="" src="MM02.jpeg" style="width:100%;">
 
-        </div>
-
-        <div class="col-md-8 mt-4">
+        <div class="col-md-7 col-sm-11 mx-auto mt-4">
             <h1>Makino Guitars</h1>
-            <hr class="lavendar-rule">
+            <hr class="">
             <span style="font-size: 1.5rem">
                 {{ .Content}}
             </span>
 
-        </div>
-
-        <!--
-        <div class="col-md-4 mt-4">
-            <img src="/placeholder.png" style="width:100%;">
-        </div>
-        -->
-
-    </div>
-
-    <div class="row mt-4">
-        {{ range where .Site.Pages "Params.homeDisplay" true }}
-            <div class="col-md-6">
-
-                {{ partial "card-indigo" . }}
-
+            <div class="row mt-4">
+                {{ range where .Site.Pages "Params.homeDisplay" true }}
+                    <div class="col-md-6">
+        
+                        {{ partial "card-indigo" . }}
+        
+                    </div>
+                {{ end }}
             </div>
-        {{ end }}
+
+        </div>
+
     </div>
+
+
 
 </div>
 {{ partial "foot" . }}

@@ -1,0 +1,123 @@
+// COLORS FROM MAKINO GUITARS STYLE GUIDE
+$slate:         #313E37;
+$green:         #56762C;
+$cream:         #FFF8E7;
+$tan:           #E0BB7F;
+$orange:        #C56D27;
+
+
+/* CUSTOM THEME COLORS */
+p {
+    color: #0D1821!important;
+  }
+  
+  .theme-black {
+    background-color:#0D1821!important;
+  }
+  
+  .theme-indigo {
+    background-color: #344966!important;
+  }
+  
+  .theme-powder {
+    background-color: #F0F4EF!important;
+  }
+  
+  .theme-sage {
+    background-color: #BFCC94!important;
+  }
+  
+  .theme-lavendar {
+    background-color: #E6AACE!important;
+  }
+  
+  .color-black {
+    color:#0D1821!important;
+  }
+  
+  .color-indigo {
+    color: #344966!important;
+  }
+  
+  .color-powder {
+    color: #F0F4EF!important;
+  }
+  
+  .color-sage {
+    color: #BFCC94!important;
+  }
+  
+  .color-lavendar {
+    color: #E6AACE!important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Ambroise";
+    font-weight: 900;
+  }
+  
+  .lavendar-rule {
+    border: 1px solid #E6AACE;
+  }
+  
+  .card-indigo {
+    border-top: 12px solid #344966;
+    border-radius: 0px!important;
+  }
+  
+  .card-sage {
+    border-top: 10px solid #BFCC94;
+    border-radius: 0px!important;
+  }
+  
+  .card-sage .card-img-top {
+    border-radius: 0px!important;
+  }
+  
+  .card-indigo .card-img-top {
+    border-radius: 0px!important;
+  }
+  
+  .card-shadow-lavendar {
+    box-shadow: 2px 2px 8px #E6AACE50;
+  }
+  
+  .card-shadow-sage {
+    box-shadow: 2px 2px 15px #BFCC94;
+  }
+  
+  
+  .breadcrumb {
+    background-color: transparent!important;
+    padding-left: 0px!important;
+  
+  }
+  
+  nav {
+    border-radius: 0px!important;
+    border-top: 2px solid #BFCC94;
+    margin-bottom: 65px;
+  }
+  
+  
+  /* FONTS */
+  @font-face {
+    font-family: 'Brandon Grotesque regular';
+    src: url('/fonts/Brandon-Grotesque-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ambroise';
+    src: url('/fonts/Ambroise-regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Brandon Grotesque regular', sans-serif!important;
+    letter-spacing: .4px;
+    font-weight: 500;
+    line-height: 1.9rem;
+  }

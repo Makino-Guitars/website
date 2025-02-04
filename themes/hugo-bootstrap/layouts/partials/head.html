@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}">
 
   {{ $sass := resources.Get "custom.scss" }}
-{{- $style := $sass | resources.ToCSS -}}
+  {{- $style := $sass | resources.ToCSS -}}
 <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
   {{ partial "base/favicon" . }}

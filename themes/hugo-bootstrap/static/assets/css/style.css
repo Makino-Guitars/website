@@ -6,17 +6,17 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   padding-bottom: 2rem;
   color: rgba(0, 0, 0, .84);
   font-weight: 400;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "liga" on;
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga" on; 
 }
 
 .site-navbar {
@@ -290,101 +290,3 @@ blockquote p cite:before {
 
 
 
-
-
-/* CUSTOM THEME COLORS */
-p {
-  color: #0D1821!important;
-}
-
-.theme-black {
-  background-color:#0D1821!important;
-}
-
-.theme-indigo {
-  background-color: #344966!important;
-}
-
-.theme-powder {
-  background-color: #F0F4EF!important;
-}
-
-.theme-sage {
-  background-color: #BFCC94!important;
-}
-
-.theme-lavendar {
-  background-color: #E6AACE!important;
-}
-
-.color-black {
-  color:#0D1821!important;
-}
-
-.color-indigo {
-  color: #344966!important;
-}
-
-.color-powder {
-  color: #F0F4EF!important;
-}
-
-.color-sage {
-  color: #BFCC94!important;
-}
-
-.color-lavendar {
-  color: #E6AACE!important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "American Typewriter", serif; /* Fallback to serif if the font isn't available */
-  font-weight: bold;
-}
-
-body {
-  font-family: "Avenir Book"
-}
-
-.lavendar-rule {
-  border: 1px solid #E6AACE;
-}
-
-.card-indigo {
-  border-top: 12px solid #344966;
-  border-radius: 0px!important;
-}
-
-.card-sage {
-  border-top: 10px solid #BFCC94;
-  border-radius: 0px!important;
-}
-
-.card-sage .card-img-top {
-  border-radius: 0px!important;
-}
-
-.card-indigo .card-img-top {
-  border-radius: 0px!important;
-}
-
-.card-shadow-lavendar {
-  box-shadow: 2px 2px 8px #E6AACE50;
-}
-
-.card-shadow-sage {
-  box-shadow: 2px 2px 15px #BFCC94;
-}
-
-
-.breadcrumb {
-  background-color: transparent!important;
-  padding-left: 0px!important;
-
-}
-
-nav {
-  border-radius: 0px!important;
-  border-top: 2px solid #BFCC94;
-  margin-bottom: 65px;
-}

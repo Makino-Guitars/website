@@ -7,6 +7,15 @@ pageType: guitarmodels
 pricing: "$1, Bob."
 img: DSC06880.jpg
 gallery: mm
+galleryImages:
+- DSC06880.jpg
+- DSC06878.jpg
+- DSC06880.jpg
+- DSC06885.jpg
+- DSC06886.jpg
+- DSC06887.jpg
+- DSC06889.jpg
+
 ---
 
 The MM is a carved-top electric guitar. It features:
@@ -15,6 +24,8 @@ The MM is a carved-top electric guitar. It features:
 - Set neck construction
 - Two-way truss rod
 - Bone nut
+
+Beautiful, reliable, comfortable, and ready to rip.
 
 I build it with options around:
 - Bridge type: TOM-style is standard, but we can do a stopbar or others.

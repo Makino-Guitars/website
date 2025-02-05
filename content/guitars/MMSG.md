@@ -6,6 +6,18 @@ weight: 1
 pageType: guitarmodels
 img: DSC06857.jpg
 gallery: mmsg
+galleryImages:
+- DSC06857.jpg
+- DSC06861.jpg
+- DSC06866.jpg
+- DSC06866.jpg
+- DSC06867.jpg
+- DSC06868.jpg
+- DSC06889.jpg
+- DSC06872.jpg
+- DSC06873.jpg
+- DSC06875.jpg
+- DSC06876.jpg
 ---
 
 The MMSG is a slab-body adaptation of the MM design. However, the MMSG features some major differences from other traditional guitar shapes and construction methods to result in a stronger neck/body joint - that means a stronger guitar with greater tuning stability and durability.

@@ -5,22 +5,8 @@ draft: false
 weight: 3
 homeDisplay: true
 img: DSC06408.jpg
-layout: about
 ---
 
 My name is Tak. By day, I work for a civil engineering firm. By night, I build guitars in my workshop. I love seeing my guitars and hearing them make music. 
 
 What can a handmade guitar do for you that a factory-made guitar can't? Not much. But some musicians feel that their instrument is more than a tool, and they know that a good song requires a good story. When you use a handmade guitar - when you've talked to the builder for weeks, or months, and gotten pictures of the build process at every step of the way - then your connection to your instrument is deeper, stronger, and more significant. 
-
-## Methods
-You've heard "Measure twice, cut once," right? Well, not only do I measure twice - I spend a long time thinking through the process of guitar construction before cutting wood. Creating a tool to do a job perfectly - or planning out the right order of operations - is as satisfying to me as the first moment I plug in a guitar. 
-
-My methods include:
-- Hand-routed guitar bodies
-- Set-neck construction
-- Handwound pickups
-
-## Materials
-I like building with:
-- Spanish cedar (not Spanish, and not a kind of cedar, but a great wood for making electric guitars)
-

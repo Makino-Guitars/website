@@ -1,7 +1,7 @@
 {{ partial "head" . }}
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-      <div class="col-12">
+      <div class="col-md-11 mx-auto">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../" class="color-indigo">Home</a></li>
@@ -12,13 +12,17 @@
       </div>
     </div>
 
+
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-6 ml-auto">
         {{ if .Params.img }}
-        <img src="{{ .Params.img | absURL }}" style="width:100%;">
+          <div class="tall-cover" style="background-image: url('{{ .Params.img | absURL }}');">
+          </div>
+
         {{ else }}
-        {{ $placeholder := "placeholder.png"}}
-        <img src="{{ $placeholder | absURL }}" style="width:100%;">
+          {{ $placeholder := "placeholder.png"}}
+          <div class="tall-cover" style="background-image: url('{{ $placeholder | absURL }}');">
+          </div>
         {{ end }}
       </div>
 
@@ -31,10 +35,16 @@
 
   </div>
 
+  <div class="row">
+    <div class="col-11 mx-auto">
+      {{ if .Params.gallery }}
+        {{ partial "guitar-gallery" . }}
+      {{ end }}
+    </div>
+  </div>
 
-    {{ if .Params.gallery }}
-      {{ partial "guitar-gallery" . }}
-    {{ end }}
+
+
 
 
 </div>

@@ -16,6 +16,10 @@ $indigo:        #344966;
     color: $cream!important;
 }
 
+.theme-text-dark {
+  color: $slate!important;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "American Typewriter", serif;
     font-weight: 900;
@@ -58,6 +62,14 @@ hr {
     border-radius: 0px!important;
     box-shadow: 2px 2px 5px $tan;
 }
+
+.page-link {
+  text-decoration: underline;
+  color: $green!important;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -146,8 +158,9 @@ p {
   }
   
   nav {
+    margin-top: 20px;
     border-radius: 0px!important;
-    border-top: 2px solid #BFCC94;
+    border-top: 2px solid $tan;
     margin-bottom: 65px;
   }
   

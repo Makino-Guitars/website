@@ -5,6 +5,7 @@ draft: false
 weight: 3
 homeDisplay: true
 img: DSC06408.jpg
+layout: about
 ---
 
 My name is Tak. By day, I work for a civil engineering firm. By night, I build guitars in my workshop. I love seeing my guitars and hearing them make music. 

@@ -10,23 +10,25 @@
           </ol>
         </nav>
       </div>
+    </div>
 
-      <div class="col-12">
-        <h1>{{ .Title }}</h1>
+    <div class="row">
+      <div class="col-md-5">
+        {{ if .Params.img }}
+        <img src="{{ .Params.img | absURL }}" style="width:100%;">
+        {{ else }}
+        {{ $placeholder := "placeholder.png"}}
+        <img src="{{ $placeholder | absURL }}" style="width:100%;">
+        {{ end }}
       </div>
 
-    <div class="col-md-8">
+    <div class="col-md-5 mr-auto">
+      <h1>{{ .Title }}</h1>
+
       {{ .Content }}
     </div>
 
-    <div class="col-md-4">
-      {{ if .Params.img }}
-      <img src="{{ .Params.img | absURL }}" style="width:100%;">
-      {{ else }}
-      {{ $placeholder := "placeholder.png"}}
-      <img src="{{ $placeholder | absURL }}" style="width:100%;">
-      {{ end }}
-    </div>
+
   </div>
 
 

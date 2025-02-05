@@ -9,7 +9,9 @@ img: DSC06408.jpg
 
 I use traditional, hands-on building methods. I cut wood using templates and a router, not a programmable machine. 
 
+
+
 ## Finishes
 Oil
 Nitro
-Rubio MOnocoat
+Rubio Monocoat

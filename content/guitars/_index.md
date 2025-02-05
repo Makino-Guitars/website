@@ -5,7 +5,7 @@ draft: false
 weight: 1
 type: guitars
 homeDisplay: true
-img: MM-01.jpg
+img: DSC06914.jpg
 ---
 
 I build with strong, traditional methods: hand-routed bodies, hand-shaped necks, and more. And I've looked at great guitars to see what makes them great - and to see if they can be improved, too.

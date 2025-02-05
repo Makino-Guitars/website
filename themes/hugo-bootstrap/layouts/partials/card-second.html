@@ -1,20 +1,20 @@
 <a href="{{ .RelPermalink }}">
-    <div class="card color-indigo card-sage card-shadow-lavendar bg-light">
-
+    <div class="card h-100 theme-bg-cream">
         <div class="row no-gutters">
-            <div class="col-4">
+            <div class="col-12" style="height: 25vh;">
                 {{ if .Params.img }}
-                    <img class="card-img-top" src="{{ .Params.img | absURL }}" alt="Card image cap">
+                    <div class="card-cover h-100" style="background-image: url('{{ .Params.img | absURL }}');">
+                    </div>
                 {{ else }}
-                {{ $placeholder := "placeholder.png"}}
-                <img class="card-img-top" src="{{ $placeholder | absURL }}" alt="Card image cap">
+                    <div class="card-cover h-100" style="background-image: url('placeholder.png');">
+                    </div>
                 {{ end }}
             </div>
 
-            <div class="col-8">
+            <div class="col-12">
                 <div class="card-body">
-                    <h3 class="card-title color-indigo">{{ .Title }}</h3>
-                    <p class="card-text color-indigo">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
+                    <h3 class="h5 card-title theme-text-dark">{{ .Title }}</h3>
+                    <p class="card-text theme-text-dark fs-xs">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
                 </div>
             </div>
         </div>

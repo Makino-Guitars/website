@@ -21,9 +21,10 @@ $indigo:        #344966;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "American Typewriter", serif;
+    font-family: "Ambroise", serif;
     font-weight: 900;
     color: $slate;
+    letter-spacing: .2rem;
   }
 
 hr {
@@ -102,6 +103,24 @@ nav a {
 
 body {
   width: 100vw;
+  font-family: 'Brandon Grotesque'!important;
+  letter-spacing: .03rem;
+  font-weight: 500;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Ambroise';
+  src: url('/fonts/Ambroise-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/Brandon-Grotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 

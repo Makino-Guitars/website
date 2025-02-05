@@ -22,7 +22,7 @@
   <div class="row mb-4">
     {{ range where .Site.Pages ".Params.pageType" "guitarmodels" }}
     <div class="col-md-6">
-      {{ partial "card-indigo" . }}
+      {{ partial "card-main" . }}
   </div>
     {{ end }}
 </div>
@@ -36,7 +36,7 @@
 <div class="row">
   {{ range where .Site.Pages ".Params.pageType" "other" }}
   <div class="col-md-4">
-    {{ partial "card-sage" . }}
+    {{ partial "card-second" . }}
 
 </div>
   {{ end }}

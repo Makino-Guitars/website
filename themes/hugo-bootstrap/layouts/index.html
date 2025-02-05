@@ -18,16 +18,18 @@
                 {{ .Content}}
             </span>
 
+        </div>
+
+        <div class="col-md-10 col-sm-11 mx-auto">
             <div class="row mt-4">
                 {{ range where .Site.Pages "Params.homeDisplay" true }}
                     <div class="col-md-6">
         
-                        {{ partial "card-indigo" . }}
+                        {{ partial "card-main" . }}
         
                     </div>
                 {{ end }}
             </div>
-
         </div>
 
     </div>

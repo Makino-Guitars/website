@@ -13,33 +13,21 @@
       </nav>
     </div>
 
-    <div class="col-12"> 
+    <div class="col-md-8 mr-auto"> 
       <h2>{{ .Title }}</h2>   
       {{ .Content }}
     </div>
   </div>
 
   <div class="row mb-4">
-    {{ range where .Site.Pages ".Params.type" "guitarmodels" }}
-    <div class="col-md-4">
-      <a href="{{ .RelPermalink }}">
-          <div class="card theme-indigo color-sage card-shadow-lavendar">
-              {{ if .Params.img }}
-              <img class="card-img-top" src="../{{ .Params.img }}" alt="Card image cap">
-              {{ else }}
-              <img class="card-img-top" src="../placeholder.png" alt="Card image cap">
-              {{ end }}
-              <div class="card-body">
-              <h3 class="card-title color-sage">{{ .Title }}</h3>
-              <p class="card-text color-sage">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
-              </div>
-          </div>
-      </a>
+    {{ range where .Site.Pages ".Params.pageType" "guitarmodels" }}
+    <div class="col-md-6">
+      {{ partial "card-main" . }}
   </div>
     {{ end }}
 </div>
 
-<div class="row mt-4">
+<div class="row mt-6" style="margin-top: 4rem;">
   <div class="col-12">
     <h2>Other stuff</h2>
   </div>
@@ -48,19 +36,8 @@
 <div class="row">
   {{ range where .Site.Pages ".Params.pageType" "other" }}
   <div class="col-md-4">
-    <a href="{{ .RelPermalink }}">
-        <div class="card theme-indigo color-sage card-shadow-lavendar">
-            {{ if .Params.img }}
-            <img class="card-img-top" src="../{{ .Params.img }}" alt="Card image cap">
-            {{ else }}
-            <img class="card-img-top" src="../placeholder.png" alt="Card image cap">
-            {{ end }}
-            <div class="card-body">
-            <h4 class="card-title color-sage">{{ .Title }}</h4>
-            <p class="card-text color-sage">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
-            </div>
-        </div>
-    </a>
+    {{ partial "card-second" . }}
+
 </div>
   {{ end }}
 </div>

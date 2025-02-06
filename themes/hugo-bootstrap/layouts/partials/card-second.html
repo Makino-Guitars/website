@@ -1,0 +1,22 @@
+<a href="{{ .RelPermalink }}" class="link-no-dec">
+    <div class="card h-100 theme-bg-cream">
+        <div class="row no-gutters">
+            <div class="col-12" style="height: 25vh;">
+                {{ if .Params.img }}
+                    <div class="card-cover h-100" style="background-image: url('{{ .Params.img | absURL }}');">
+                    </div>
+                {{ else }}
+                    <div class="card-cover h-100" style="background-image: url('placeholder.png');">
+                    </div>
+                {{ end }}
+            </div>
+
+            <div class="col-12">
+                <div class="card-body">
+                    <h3 class="h5 card-title theme-text-dark">{{ .Title }}</h3>
+                    <p class="card-text theme-text-dark fs-xs">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>

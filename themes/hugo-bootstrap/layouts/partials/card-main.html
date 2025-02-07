@@ -1,5 +1,5 @@
 <a href="{{ .RelPermalink }}" class="link-no-dec">
-    <div class="card theme-bg-cream h-100">
+    <div class="card theme-bg-cream h-100 mb-4">
 
         <div class="row no-gutters h-100">
             <div class="col-4 h-100">
@@ -15,7 +15,7 @@
             <div class="col-8">
                 <div class="card-body">
                     <h3 class="card-title theme-text-dark">{{ .Title }}</h3>
-                    <p class="card-text theme-text-dark">{{ .Content | plainify | htmlUnescape | truncate 175 }}</p>
+                    <p class="card-text theme-text-dark">{{ .Content | plainify | htmlUnescape | truncate 225 }}</p>
                 </div>
             </div>
         </div>

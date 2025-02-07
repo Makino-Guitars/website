@@ -17,6 +17,6 @@ navbarBgColorClass = 'secondary'
     pre = "<i class='fas fa-envelope-square'></i>"
     weight = 10
     identifier = "contact"
-    url = "/contact"
+    url = "mailto:tak@makinoguitars.com"
 
     

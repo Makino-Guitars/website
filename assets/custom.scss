@@ -1,4 +1,6 @@
 // COLORS FROM MAKINO GUITARS STYLE GUIDE
+
+$takColors: slate, green, cream, tan, orange;
 $slate:         #313E37;
 $green:         #56762C;
 $cream:         #FFF8E7;
@@ -21,10 +23,8 @@ $indigo:        #344966;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Ambroise", serif;
-    font-weight: 900;
+    font-family: "Periodico", serif;
     color: $slate;
-    letter-spacing: .12rem;
   }
 
 hr {
@@ -55,11 +55,14 @@ hr {
   background-repeat: no-repeat;
 }
 
-.img-shadow {
+@each $color in $takColors {
+  .shadow-#{$color} {
     width: 150px;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(5px 5px 5px $color);
+    filter: drop-shadow(5px 5px 5px $color);
   }
+}
+
 
 
 .theme-bg-cream {
@@ -108,10 +111,35 @@ body {
   font-weight: 500;
 }
 
+.bodycover {
+  background: url('Pattern-cream-trans.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('Pattern-cream-trans.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: .5;
+}
+
 /* FONTS */
 @font-face {
   font-family: 'Ambroise';
   src: url('/fonts/Ambroise-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Periodico';
+  src: url('/fonts/Periodico-Display.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -215,7 +243,7 @@ p {
     margin-top: 20px;
     border-radius: 0px!important;
     border-top: 2px solid $tan;
-    margin-bottom: 65px;
+    margin-bottom: 35px;
   }
   
   

@@ -1,4 +1,5 @@
 {{ partial "head" . }}
+<div class="background-container"></div>
 <div class="container-fluid">
   <div class="row">
       <div class="col-md-11 mx-auto">
@@ -15,15 +16,18 @@
 
     <div class="row">
       <div class="col-md-6 ml-auto">
-        {{ if .Params.img }}
-          <div class="tall-cover" style="background-image: url('{{ .Params.img | absURL }}');">
-          </div>
 
+        {{ if .Params.gallery }}
+            {{ partial "guitar-gallery" . }}
+        {{ else if .Params.img }}
+        <div class="tall-cover" style="background-image: url('{{ .Params.img | absURL }}');">
+        </div>
         {{ else }}
           {{ $placeholder := "placeholder.png"}}
           <div class="tall-cover" style="background-image: url('{{ $placeholder | absURL }}');">
           </div>
         {{ end }}
+
       </div>
 
     <div class="col-md-5 mr-auto">
@@ -34,18 +38,6 @@
 
 
   </div>
-
-  <div class="row">
-    <div class="col-11 mx-auto">
-      {{ if .Params.gallery }}
-        {{ partial "guitar-gallery" . }}
-      {{ end }}
-    </div>
-  </div>
-
-
-
-
 
 </div>
 {{ partial "foot" . }}

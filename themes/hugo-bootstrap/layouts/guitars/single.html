@@ -37,10 +37,10 @@
         {{ .Content }}
       </div>
 
-
+      {{ if eq .Params.pageType "guitarmodels" }}
       <hr>
 
-      <p>Standard features:</p>
+      <p>Standard features:
       <ul>
       <li>24.875" scale length</li>
       <li>1 11/16” nut width</li>
@@ -50,8 +50,8 @@
       <li>Two-way truss rod</li>
       <li>Bone nut</li>
       <li>Switchcraft jack and switch, CTS pots</li>
-      </ul>
-      <p>All guitars are custom built to order, but some options I enjoy include:</p>
+      </ul></p>
+      <p>All guitars are custom built to order, but some options I enjoy include:
       <ul>
       <li>Available in solid or chambered construction</li>
       <li>Bridge type: TOM/Stopbar standard, but we can do a stopbar or others.</li>
@@ -60,7 +60,8 @@
       <li>Wood: I typically use Spanish Cedar, but can build with a wide variety of woods.</li>
       <li>Details: inlays, frets, and other details.</li>
       <li>Finish: typically Nitro, but oil options are available.</li>
-      </ul>
+      </ul></p>
+      {{ end }}
     </div>
 
 

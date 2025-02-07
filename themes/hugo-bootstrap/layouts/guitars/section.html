@@ -16,6 +16,7 @@
           <div class="fs-md">
             {{ .Content }}
           </div>
+          <hr>
     
         </div>
       </div>
@@ -26,7 +27,7 @@
 
     <div class="col-12">
       <div class="row my-4">
-        {{ range where .Site.Pages ".Params.pageType" "guitarmodels" }}
+        {{ range where .Site.RegularPages "Section" "guitars" }}
         <div class="col-md-4 mb-2">
           {{ partial "card-main" . }}
       </div>
@@ -38,7 +39,7 @@
   <div class="row">
     <div class="col-md-10 mx-auto">
       <div class="row">
-          <div class="col-md-8 mr-auto">
+          <div class="col-md-8 mr-auto fs-md">
             <hr>
             <h3>Customization</h3>
             <p>These models are customizable. We'll work together on things like:

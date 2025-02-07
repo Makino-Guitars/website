@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://mmontesanonyc.github.io/Makino-Guitars-website/'
 languageCode = 'en-us'
 title = 'Makino Guitars'
 theme = 'hugo-bootstrap'

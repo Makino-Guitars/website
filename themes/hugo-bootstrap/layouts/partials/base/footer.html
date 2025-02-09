@@ -1,8 +1,5 @@
-<footer class="footer text-white {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
-  <div class="container">
-    <div class="row">
-      <div class="offset-lg-1 col-lg-10 col-xs-12">
-        <p class="text-center my-4 pa-0 color-sage">
+<footer class="footer theme-bg-dark mb-0">
+        <p class="text-center my-4 pa-0 theme-text-light">
           &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
         </p>
         {{ if .Site.Menus.footer }}
@@ -14,7 +11,6 @@
               {{ if lt $k (sub $footerMenuLen 1) }}&middot;{{ end }} {{ end }} {{ end }}
         </p>
         {{ end }}
-      </div>
-    </div>
-  </div>
+
+
 </footer>

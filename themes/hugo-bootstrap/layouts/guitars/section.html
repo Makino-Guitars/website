@@ -1,69 +1,91 @@
-
-
-
 {{ partial "head" . }}
-<div class="container">
+<div class="background-container"></div>
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12">
-      <nav aria-label="breadcrumb" class="">
+    <div class="col-md-10 mx-auto">
+      <nav aria-label="breadcrumb" class="site-breadcrumbs">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../" class="color-indigo">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
         </ol>
       </nav>
-    </div>
 
-    <div class="col-12"> 
-      <h2>{{ .Title }}</h2>   
-      {{ .Content }}
-    </div>
-  </div>
-
-  <div class="row mb-4">
-    {{ range where .Site.Pages ".Params.type" "guitarmodels" }}
-    <div class="col-md-4">
-      <a href="{{ .RelPermalink }}">
-          <div class="card theme-indigo color-sage card-shadow-lavendar">
-              {{ if .Params.img }}
-              <img class="card-img-top" src="../{{ .Params.img }}" alt="Card image cap">
-              {{ else }}
-              <img class="card-img-top" src="../placeholder.png" alt="Card image cap">
-              {{ end }}
-              <div class="card-body">
-              <h3 class="card-title color-sage">{{ .Title }}</h3>
-              <p class="card-text color-sage">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
-              </div>
+      <div class="row">
+        <div class="col-md-8 mr-auto"> 
+          <h2>{{ .Title }}</h2>   
+          <div class="fs-md">
+            {{ .Content }}
           </div>
-      </a>
-  </div>
-    {{ end }}
-</div>
-
-<div class="row mt-4">
-  <div class="col-12">
-    <h2>Other stuff</h2>
-  </div>
-</div>
-
-<div class="row">
-  {{ range where .Site.Pages ".Params.pageType" "other" }}
-  <div class="col-md-4">
-    <a href="{{ .RelPermalink }}">
-        <div class="card theme-indigo color-sage card-shadow-lavendar">
-            {{ if .Params.img }}
-            <img class="card-img-top" src="../{{ .Params.img }}" alt="Card image cap">
-            {{ else }}
-            <img class="card-img-top" src="../placeholder.png" alt="Card image cap">
-            {{ end }}
-            <div class="card-body">
-            <h4 class="card-title color-sage">{{ .Title }}</h4>
-            <p class="card-text color-sage">{{ .Content | plainify | htmlUnescape | truncate 75 }}</p>
-            </div>
+          <hr>
+    
         </div>
-    </a>
-</div>
-  {{ end }}
-</div>
+      </div>
+
+
+
+    </div>
+
+    <div class="col-12">
+      <div class="row my-4">
+        {{ range where .Site.RegularPages "Section" "guitars" }}
+        <div class="col-md-4 mb-2">
+          {{ partial "card-main" . }}
+      </div>
+        {{ end }}
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10 mx-auto">
+      <div class="row">
+          <div class="col-md-8 mr-auto fs-md">
+            <hr>
+            <h3>Customization</h3>
+            <p>These models are customizable. We'll work together on things like:
+              <ul>
+                <li>Wood selection</li>
+                <li>Neck profile</li>
+                <li>Pickup selection and placement</li>
+                <li>Control configuration</li>
+                <li>Hardware color</li>
+                <li>Bridge style</li>
+                <li>Binding</li>
+                <li>Inlays</li>
+                <li>Finish</li>
+              </ul>
+        
+              But, my guitars aren't endlessly customizable. If you want a JM-style guitar that's semi-hollow with an f-hole, dual humbuckers, coil taps, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
+            </p>
+        
+            <p>That's because I focus on design elements that I think make great guitars - and the construction and processes that I can execute well. </p>
+        
+
+            <hr>
+
+          </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          {{ if .Params.gallery }}
+          {{ partial "guitar-gallery" . }}
+        {{ end }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
 
 </div>
 {{ partial "foot" . }}

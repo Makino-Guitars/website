@@ -1,8 +1,9 @@
 {{ partial "head" . }}
-<div class="container">
+<div class="background-container"></div>
+<div class="container-fluid">
   <div class="row">
-      <div class="col-12">
-        <nav aria-label="breadcrumb">
+      <div class="col-md-11 mx-auto">
+        <nav aria-label="breadcrumb" class="site-breadcrumbs">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../" class="color-indigo">Home</a></li>
             <li class="breadcrumb-item"><a href="../" class="color-indigo">Guitars</a></li>
@@ -10,11 +11,61 @@
           </ol>
         </nav>
       </div>
-
-    <div class="col-12">
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
     </div>
+
+
+    <div class="row">
+      <div class="col-md-6 ml-auto">
+
+        {{ if .Params.gallery }}
+            {{ partial "guitar-gallery" . }}
+        {{ else if .Params.img }}
+        <div class="tall-cover" style="background-image: url('{{ .Params.img | absURL }}');">
+        </div>
+        {{ else }}
+          {{ $placeholder := "placeholder.png"}}
+          <div class="tall-cover" style="background-image: url('{{ $placeholder | absURL }}');">
+          </div>
+        {{ end }}
+
+      </div>
+
+    <div class="col-md-5 mr-auto">
+      <h1>{{ .Title }}</h1>
+
+      <div class="fs-md">
+        {{ .Content }}
+      </div>
+
+      {{ if eq .Params.pageType "guitarmodels" }}
+      <hr>
+
+      <p>Standard features:
+      <ul>
+      <li>24.875" scale length</li>
+      <li>1 11/16” nut width</li>
+      <li>12” radius</li>
+      <li>22 Frets</li>
+      <li>Two-piece set neck construction</li>
+      <li>Two-way truss rod</li>
+      <li>Bone nut</li>
+      <li>Switchcraft jack and switch, CTS pots</li>
+      </ul></p>
+      <p>All guitars are custom built to order, but some options I enjoy include:
+      <ul>
+      <li>Available in solid or chambered construction</li>
+      <li>Bridge type: TOM/Stopbar standard, but we can do a stopbar or others.</li>
+      <li>Pickup type and placement: humbuckers or P90s are standard, and we can discuss or modify pickup placement (especially bridge pickup distance from bridge). <a href="../../pickups">See my pickup page</a> for details about my pickups - or provide your own.</li>
+      <li>Control format and placement: a 3-way toggle and independent Volume and Tone knobs are standard.</li>
+      <li>Wood: I typically use Spanish Cedar, but can build with a wide variety of woods.</li>
+      <li>Details: inlays, frets, and other details.</li>
+      <li>Finish: typically Nitro, but oil options are available.</li>
+      </ul></p>
+      {{ end }}
+    </div>
+
+
   </div>
+
 </div>
 {{ partial "foot" . }}

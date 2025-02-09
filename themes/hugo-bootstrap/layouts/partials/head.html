@@ -10,7 +10,7 @@
 
   {{ $sass := resources.Get "custom.scss" }}
   {{- $style := $sass | resources.ToCSS -}}
-<link rel="stylesheet" href="{{ $style.Permalink }}" />
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
   {{ partial "base/favicon" . }}
 </head>

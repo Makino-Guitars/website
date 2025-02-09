@@ -1,4 +1,4 @@
-baseURL = 'https://Makino-Guitars.github.io/website'
+baseURL = 'https://www.makinoguitars.com'
 languageCode = 'en-us'
 title = 'Makino Guitars'
 theme = 'hugo-bootstrap'

@@ -20,7 +20,7 @@ galleryImages:
 - DSC06876.jpg
 ---
 
-The MMSG is the beveled-top, solid body cousin of the MM design. However, the MMSG features some major differences from traditional beveled guitar shapes to make for a sturdy instrument without neck dive. 
+The MMSG is the slimmer, beveled-top cousin of the MM design. The MMSG features some major differences from traditional beveled guitar shapes to make for a sturdy instrument without neck dive or flexible neck joint. This is not a fragile instrument. 
 
 This guitar is comfortable on the lap, hangs well from the strap, and can be built under 6.5lbs with appropriate wood selection. The mid-focused sound is sure to punch through the mix. 
 

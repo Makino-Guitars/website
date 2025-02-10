@@ -18,7 +18,7 @@ galleryImages:
 
 ---
 
-The MM is a carved-top electric guitar, designed to evoke the classic maple-over-mahogany guitars of the 1950s with adjustments to improve playability, comfort, and style. Significant effort went into designing a shape that both sits well on the lap and hangs in a neutral playing position on the strap.  
+The MM is a carved-top electric guitar, designed to evoke the classic maple-over-mahogany guitars of the 1950s with adjustments to improve playability, comfort, and style. Significant effort went into designing a shape that both sits well on the lap and hangs in a neutral playing position on the strap. I offer the MM with a chambered body option for weight reduction.  
 
 Designed to be sturdy, beautiful, and comfortable, the MM is a big-sounding guitar. 
 

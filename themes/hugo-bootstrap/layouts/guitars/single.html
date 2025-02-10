@@ -37,6 +37,11 @@
         {{ .Content }}
       </div>
 
+      {{ if eq .Params.pageType "guitarmodel"}}
+      <hr>
+      {{ partial "customize" .}}
+      {{ end }}
+
 
     </div>
 

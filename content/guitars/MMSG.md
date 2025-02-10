@@ -23,3 +23,15 @@ galleryImages:
 The MMSG is the beveled-top, solid body cousin of the MM design. However, the MMSG features some major differences from traditional beveled guitar shapes to make for a sturdy instrument without neck dive. 
 
 This guitar is comfortable on the lap, hangs well from the strap, and can be built under 6.5lbs with appropriate wood selection. The mid-focused sound is sure to punch through the mix. 
+
+---
+
+Standard features:
+- 24.5" scale length
+- 1 11/16” nut width
+- 12” radius
+- 22 frets
+- Two-piece set neck construction
+- Two-way truss rod
+- Bone nut
+- Switchcraft jack and switch, CTS pots

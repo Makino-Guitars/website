@@ -7,9 +7,11 @@ homeDisplay: true
 img: DSC06408.jpg
 gallery: about
 galleryImages:
+- DSC06925.jpg
 - DSC06400.jpg
 - DSC06420.jpg
 - DSC06596.jpg
+- DSC06901.jpg
 - DSC06632.jpg
 - DSC06644.jpg
 - DSC06772.jpg

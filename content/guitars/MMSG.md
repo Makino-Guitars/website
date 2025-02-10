@@ -10,9 +10,7 @@ galleryImages:
 - DSC06857.jpg
 - DSC06861.jpg
 - DSC06866.jpg
-- DSC06866.jpg
 - DSC06867.jpg
-- DSC06868.jpg
 - DSC06889.jpg
 - DSC06872.jpg
 - DSC06873.jpg

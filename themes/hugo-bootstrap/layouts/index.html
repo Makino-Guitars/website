@@ -4,7 +4,6 @@
     <div class="row no-gutters">
         <div class="col-12 p-0">
             <div class="big-fn-image" style="background-image: url('MM02.jpeg');">
-                <img src="Makino-cream-trans.png" style="margin-top: 50px;width: 70%;" class="float-left shadow-tan">
             </div>
         </div>
     </div>
@@ -25,10 +24,13 @@
 
         </div>
 
-        <div class="col-md-10 col-sm-11 mx-auto">
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 mx-auto">
             <div class="row my-4">
                 {{ range where .Site.Pages "Params.homeDisplay" true }}
-                    <div class="col-md-6 mb-2">
+                    <div class="col-sm-6 mb-4">
         
                         {{ partial "card-main" . }}
         
@@ -36,7 +38,6 @@
                 {{ end }}
             </div>
         </div>
-
     </div>
 
 

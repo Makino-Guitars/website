@@ -9,12 +9,11 @@ img: DSC06880.jpg
 gallery: mm
 galleryImages:
 - DSC06880.jpg
-- DSC06878.jpg
-- DSC06880.jpg
 - DSC06885.jpg
 - DSC06886.jpg
 - DSC06887.jpg
 - DSC06889.jpg
+- DSC06897.jpg
 
 ---
 

@@ -25,3 +25,6 @@ Custom humbuckers, wound in-house, are available on all guitars.
 
 ### Customize:
 The standard models are starting places - I can wind you something special. Tell me about your sonic needs and I’ll use different wire, magnets, and winding schemes to reproduce the sound in your head.
+
+We are spoiled for choice right now. There are small boutique winders and large commercial outfits making great products. I am also happy to use their pickups in my instruments. 
+

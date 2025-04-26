@@ -7,14 +7,17 @@
     &#9776;
   </button>
   <div class="collapse navbar-collapse mr-2" id="exCollapsingNavbar2">
+
     <ul class="nav navbar-nav ml-auto">
       {{ $currentNode := . }} {{ range .Site.Menus.main }}
+      <!--
       <li class="nav-item">
         <a class="nav-link menu-item no-decoration theme-text-light" href="{{.URL}}">
           {{ .Pre }}
           <span class="text-capitalize">{{ .Name }}</span>
         </a>
       </li>
+    -->
       {{end}}
     </ul>
   </div>

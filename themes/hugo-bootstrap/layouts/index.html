@@ -1,12 +1,35 @@
 {{ partial "head" . }}
 <div class="background-container"></div>
-<div class="container-fluid p-0">
+<div class="container-fluid">
+
+    <!--
     <div class="row no-gutters">
         <div class="col-12 p-0">
-            <div class="big-fn-image" style="background-image: url('MM02.jpeg');">
-                <img src="Makino-cream-trans.png" style="margin-top: 50px;width: 70%;" class="float-left shadow-tan">
+            <div class="big-fn-image" style="background-image: url('MM02-full.jpeg');">
             </div>
         </div>
+    </div>
+    -->
+
+    <div class="row my-2">
+        <div class="col-md-6 mx-auto col-sm-12 px-2">
+            {{ partial "guitar-gallery-attribution" . }}
+
+                        <h1>Makino Guitars</h1>
+            <hr class="">
+
+            <div class="fs-lg">
+                {{ .Content}}
+
+                <a href="https://www.instagram.com/takmakinoguitars"><i class="fab fa-instagram mr-2"></i>Makino Guitars</a> <a class="float-right" href="mailto:tak@makinoguitars.com">Email me<i class="fas fa-envelope ml-2"></i></a>
+
+                <hr>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 </div>
@@ -14,21 +37,10 @@
 <div class="container-fluid">
 
     <div class="row">
-
-        <div class="col-md-7 col-sm-11 mx-auto mt-4">
-            <h1>Makino Guitars</h1>
-            <hr class="">
-
-            <div class="fs-lg">
-                {{ .Content}}
-            </div>
-
-        </div>
-
-        <div class="col-md-10 col-sm-11 mx-auto">
+        <div class="col-md-10 mx-auto">
             <div class="row my-4">
                 {{ range where .Site.Pages "Params.homeDisplay" true }}
-                    <div class="col-md-6 mb-2">
+                    <div class="col-sm-6 mb-4">
         
                         {{ partial "card-main" . }}
         
@@ -36,7 +48,6 @@
                 {{ end }}
             </div>
         </div>
-
     </div>
 
 

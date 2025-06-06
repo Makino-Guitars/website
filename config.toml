@@ -6,14 +6,28 @@ navbarBgColorClass = 'secondary'
 
 
 [[menu.main]]
-    name = "Instagram"
-    pre = "<i class='fab fa-instagram'></i>"
-    weight = -10
+    name = "Guitars"
+    pre = ""
+    weight = -20
     identifier = "guitars"
+    url = "/guitars/"
+
+[[menu.main]]
+    name = "About"
+    pre = ""
+    weight = -10
+    identifier = "About"
+    url = "/about/"
+
+[[menu.main]]
+    name = ""
+    pre = "<i class='fab fa-instagram'></i>"
+    weight = -5
+    identifier = "instagram"
     url = "https://www.instagram.com/takmakino"
 
 [[menu.main]]
-    name = "Contact"
+    name = ""
     pre = "<i class='fas fa-envelope-square'></i>"
     weight = 10
     identifier = "contact"

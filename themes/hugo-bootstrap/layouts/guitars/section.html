@@ -28,8 +28,8 @@
     <div class="col-12">
       <div class="row my-4">
         {{ range where .Site.RegularPages "Section" "guitars" }}
-        <div class="col-md-4 mb-2">
-          {{ partial "card-main" . }}
+        <div class="col-lg-4 col-md-12 mb-2">
+          {{ partial "card-guitar" . }}
       </div>
         {{ end }}
     </div>
@@ -41,26 +41,7 @@
       <div class="row">
           <div class="col-md-8 mr-auto fs-md">
             <hr>
-            <h3>Customization</h3>
-            <p>These models are customizable. We'll work together on things like:
-              <ul>
-                <li>Wood selection</li>
-                <li>Neck profile</li>
-                <li>Pickup selection and placement</li>
-                <li>Control configuration</li>
-                <li>Hardware color</li>
-                <li>Bridge style</li>
-                <li>Binding</li>
-                <li>Inlays</li>
-                <li>Finish</li>
-              </ul>
-        
-              But, my guitars aren't endlessly customizable. If you want a JM-style guitar that's semi-hollow with an f-hole, dual humbuckers, coil taps, and a Floyd Rose trem, that's great! But I'm probably not the builder for you.
-            </p>
-        
-            <p>That's because I focus on design elements that I think make great guitars - and the construction and processes that I can execute well. </p>
-        
-
+              {{ partial "customize" .}}
             <hr>
 
           </div>

@@ -1,0 +1,41 @@
+---
+title: "Envoy"
+date: 2022-06-19T13:18:41-04:00
+draft: false
+weight: 1
+pageType: guitarmodels
+pricing: "Starts at $2600."
+img: DSC01917.jpg
+gallery: mm
+galleryImages:
+- envoy/blackpink/DSC01023.jpg
+- envoy/blackpink/DSC01040.jpg
+- envoy/blackpink/DSC01048.jpg
+- envoy/sparklegreen/DSC01917.jpg
+- envoy/sparklegreen/DSC01964.jpg
+- envoy/sparklegreen/DSC01975.jpg
+- envoy/sparklegreen/DSC02092.jpg
+- envoy/burst/DSC03055.jpg
+- envoy/burst/DSC03070.jpg
+- envoy/burst/DSC03099-2.jpg
+- envoy/MM02/DSC06886.jpg
+- envoy/MM02/DSC06885.jpg
+
+---
+
+The Envoy is a carved-top electric guitar, designed to evoke the classic maple-over-mahogany guitars of the 1950s with adjustments to improve playability, comfort, and style. Significant effort went into designing a shape that both sits well on the lap and hangs in a neutral playing position on the strap. I offer the Envoy with a chambered body option for weight reduction.
+
+Designed to be sturdy, beautiful, and comfortable, the Envoy is a big-sounding guitar.
+
+Standard specs:
+- 24.875" scale length
+- 1 11/16” nut width
+- 12” radius
+- 22 Frets
+- Long tenon neck joint
+- Two-way truss rod
+- Bone nut
+- Nitrocellulose lacquer finish
+- High quality switch, jack, and pots from suppliers like Emerson, Switchcraft, and CTS
+
+Reach out on the [Order page](../../order) or [email me](mailto:tak@makinoguitars.com) and I'll be happy to discuss how I can build your favorite guitar.

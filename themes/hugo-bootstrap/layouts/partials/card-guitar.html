@@ -1,15 +1,23 @@
-<a href="{{ .RelPermalink }}" class="link-no-dec">
+<a href="{{ .RelPermalink }}" class="link-no-dec mb-2">
     <div class="card theme-bg-cream h-100 mb-4">
 
         <div class="row no-gutters h-100">
             <div class="col-4 h-100 mb-4">
-                {{ if .Params.img }}
-                    <div class="card-cover h-100" style="background-image: url('{{ .Params.img | absURL }}');">
-                    </div>
-                {{ else }}
-                    <div class="card-cover h-100" style="background-image: url('placeholder.png');">
-                    </div>
+
+                {{ $bgURL := "placeholder.png" | relURL }}
+                {{ with .Params.img }}
+                    {{ $img := . }}           <!-- save the filename -->
+                    {{ with $.Resources.GetMatch $img }}
+                        {{ $bg := .Resize "0x450 q85" }}
+                        {{ $bgURL = $bg.RelPermalink }}
+                    {{ end }}
                 {{ end }}
+
+                <div class="card-cover h-100"
+                    style="background-image: url('{{ $bgURL }}');">
+                </div>
+
+
             </div>
 
             <div class="col-8">
@@ -17,6 +25,11 @@
                     <h3 class="card-title theme-text-dark">{{ .Title }}</h3>
                     <hr class="thin">
                     <p class="card-text theme-text-dark">{{ .Content | plainify | htmlUnescape | truncate 250 }}</p>
+
+                    {{ if .Params.pricing }}
+                    <hr class="thin">
+                    <p class="card-text theme-text-dark">{{ .Params.pricing }}</p>
+                    {{ end }}
                 </div>
             </div>
         </div>

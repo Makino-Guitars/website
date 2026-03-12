@@ -19,7 +19,7 @@ galleryImages:
 - warchild/tvyellow/DSC04342.jpg
 ---
 
-The WARCHILD is designed for big riffs and mean looks. With styling inspired by hard rocking instruments of the 1970s and 1980s, it’s got excellent high fret access and a chunky midrange bark.
+The WARCHILD is designed for big riffs and mean looks. Inspired by hard rocking instruments of the 1970s and 1980s, the WARCHILD has excellent high fret access and a chunky midrange bark.
 
 Standard features:
 - 24.875" scale length
